@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Prestige | Modern Luxury Living</title>
+    <link rel="stylesheet" href="ep1.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Elite Prestige</div>
+
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <nav id="nav-menu">
+            <a href="#description">Description</a>
+            <a href="#amenities">Amenities</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <img class="hero-img">
+        <div class="hero-text">
+            <h1>Experience <span>Elite Prestige</span></h1>
+            <p>Where modern minimalism meets timeless luxury.</p>
+            <a href="#contact"><button class="btn">Book Experience</button></a>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="description" class="experience reveal">
+        <div class="experience-text">
+            <h2 class="fade-item">EXPERIENCE GRANDEUR IN EVERY MOMENT</h2>
+            <p class="fade-item">
+                Step into a world where sophistication greets you at every turn.<br><br>
+                Elite Prestige is a thoughtfully planned 10.5-acre gated community in Mumbai, featuring 6 elegant towers
+                (G+25),
+                offering spacious
+                2 and 3 BHK apartments with secure 2-level basement parking for convenience.<br><br>
+                <strong>Premium 2 & 3 BHK homes starting from ₹1.56 Cr</strong>
+            </p>
+            <a href="#sky-lounge"><button class="cta-btn fade-item">DISCOVER LUXURY <span>⟶</span></button></a>
+        </div>
+    </section>
+
+    <!-- SKY LOUNGE SECTION -->
+    <section class="features reveal" id="sky-lounge">
+        <div class="features-text fade-item">
+            <h2>THE SKY LOUNGE</h2>
+            <p>
+                “Rise above the city’s heartbeat.
+                At the Sky Lounge, every sunrise paints your mornings in gold,
+                and every dusk wraps the skyline in your embrace.
+                A realm where the city lights bow to your evenings.”
+            </p>
+            <button class="cta-btn" data-modal="modal-sky">EXPLORE SKY LOUNGE ⟶</button>
+        </div>
+        <div class="features-img fade-item">
+            <img src="images/sky1.PNG" alt="Sky Lounge Mumbai" />
+        </div>
+    </section>
+
+    <!-- COASTAL CONNECT SECTION -->
+    <section class="features reveal" id="coastal-connect">
+        <div class="features-img fade-item">
+            <img src="images/coast1.PNG" alt="Mumbai Coastal View" />
+        </div>
+        <div class="features-text fade-item">
+            <h2>COASTAL CONNECT</h2>
+            <p>
+                “From the charm of the sea breeze to the pulse of the city streets,
+                you’re at the center of it all.
+                Minutes from the shoreline, moments from life’s essentials —
+                where luxury finds its rhythm in the waves.”
+            </p>
+            <button class="cta-btn" data-modal="modal-coast">DISCOVER COASTAL LIVING ⟶</button>
+        </div>
+    </section>
+
+    <!-- URBAN ELEGANCE SECTION -->
+    <section class="features reveal" id="urban-elegance">
+        <div class="features-text fade-item">
+            <h2>URBAN ELEGANCE REDEFINED</h2>
+            <p>
+                “A timeless silhouette against the Mumbai skyline.
+                Designed for those who build their own legends —
+                where architecture meets ambition,
+                and style becomes second nature.”
+            </p>
+            <button class="cta-btn" data-modal="modal-urban">VIEW DETAILS ⟶</button>
+        </div>
+        <div class="features-img fade-item">
+            <img src="images/coastal1.PNG" alt="Modern Architecture Mumbai" />
+        </div>
+    </section>
+
+    <!-- SKY MODAL -->
+    <div class="modal" id="modal-sky">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sky Lounge Experience</h2>
+            <img src="images/sky1.PNG" alt="Sky Lounge" class="modal-img">
+            <p>
+                A private rooftop retreat designed for premium experiences — sunsets, celebrations, and curated
+                evenings.
+            </p>
+            <ul>
+                <li>Panoramic skyline views</li>
+                <li>Private seating lounges</li>
+                <li>Signature cocktails & dining</li>
+                <li>Exclusive resident access</li>
+            </ul>
+            <a href="#contact" class="modal-btn modal-action">Request a Visit</a>
+        </div>
+    </div>
+
+    <!-- COASTAL MODAL -->
+    <div class="modal" id="modal-coast">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Coastal Living</h2>
+            <img src="images/coast1.PNG" alt="Coastal" class="modal-img">
+            <p>
+                Live minutes away from the shoreline—enjoy calm mornings, relaxing evenings and well-connected city
+                life.
+            </p>
+            <ul>
+                <li>Sea-view walkways</li>
+                <li>Access to coastal highway</li>
+                <li>Nearby dining & cafes</li>
+                <li>Waterfront recreation</li>
+            </ul>
+            <a href="#contact" class="modal-btn modal-action">Request a Visit</a>
+        </div>
+    </div>
+
+    <!-- URBAN MODAL -->
+    <div class="modal" id="modal-urban">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Urban Elegance</h2>
+            <img src="images/coastal1.PNG" alt="Modern Architecture" class="modal-img">
+            <p>
+                A modern & iconic design — engineered to complement your lifestyle with privacy, comfort, and luxury.
+            </p>
+            <ul>
+                <li>Smart lobby & concierge</li>
+                <li>Exclusive resident floorplans</li>
+                <li>Premium amenities floor</li>
+                <li>Sustainable architecture</li>
+            </ul>
+            <a href="#contact" class="modal-btn modal-action">Request a Visit</a>
+        </div>
+    </div>
+
+    <!-- AMENITIES SECTION -->
+    <section id="amenities" class="amenities reveal">
+        <div class="amenities-header fade-item">
+            <h1>Celebrate each day where every moment feels unforgettable.</h1>
+            <p>
+                Designed across thoughtfully planned spaces, we offer environments that
+                enrich
+                every moment—whether it’s peaceful personal reflection or vibrant social interactions.
+            </p>
+        </div>
+
+        <div class="amenities-slider">
+            <div class="slide active">
+                <img src="images/club.PNG" alt="Clubhouse">
+                <div class="slide-text">
+                    <h2>Clubhouses</h2>
+                    <p>Gather, unwind, and celebrate — elegant social spaces for moments that matter most.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/fitness center.PNG" alt="Fitness Center">
+                <div class="slide-text">
+                    <h2>Fitness Centers</h2>
+                    <p>Stay in rhythm with your goals — world-class fitness spaces designed to inspire every workout.
+                    </p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/yoga.PNG" alt="Yoga Deck">
+                <div class="slide-text">
+                    <h2>Yoga & Meditation Decks</h2>
+                    <p>Find your balance in peaceful spaces designed to rejuvenate the mind, body, and soul.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/pool.PNG" alt="Swimming Pool">
+                <div class="slide-text">
+                    <h2>Swimming Pools</h2>
+                    <p>Dive into serenity — crystal-clear pools that make every dip feel like a private retreat.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/gar.PNG" alt="Landscaped Gardens">
+                <div class="slide-text">
+                    <h2>Landscaped Gardens</h2>
+                    <p>Breathe in nature — lush green pockets that bring tranquility to city life.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/kids area.jpg" alt="Kids area">
+                <div class="slide-text">
+                    <h2>Kids Play Area</h2>
+                    <p>A vibrant, secure space thoughtfully designed for fun, learning, and endless joyful moments.</p>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="images/parking1.PNG" alt="Parking">
+                <div class="slide-text">
+                    <h2>Parking Area</h2>
+                    <p>A 2-tier basement parking facility has been thoughtfully designed to accommodate vehicles
+                        efficiently, enhancing resident convenience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDER CONTROLS -->
+        <div class="slider-controls">
+            <button class="prev">❮</button> <!-- <div class="slide-counter">1 / 8</div> -->
+            <div class="dots-container"></div>
+            <button class="next">❯</button>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery reveal">
+        <div class="gallery-header fade-item">
+            <h1>Elegance Captured</h1>
+            <p>
+                Get a glimpse of the life that awaits you at Elite Prestige —
+                where timeless interiors, lush landscapes, and elegant spaces come together to create perfection.
+            </p>
+        </div>
+
+        <div class="swiper myGallerySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="gallery-img" src="images/e2.PNG" alt="Entrance View"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/i1.PNG" alt="Living area"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/i2.PNG" alt="Dinning Area"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/i4.PNG" alt="Balcony"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/i6.PNG" alt="Bedroom"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/bathroom.jfif" alt="Bathroom"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/sky1.PNG" alt="Sky Lounge"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/club.PNG" alt="Clubhouse"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/fitness center.PNG" alt="Fitness Center">
+                </div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/yoga.PNG" alt="Yoga & Meditation Decks">
+                </div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/pool.PNG" alt="Swimming pool"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/gar.PNG" alt="Garden area"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/parking1.PNG" alt="Basement Parking">
+                </div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/coast1.PNG" alt="Exterior View"></div>
+                <div class="swiper-slide"><img class="gallery-img" src="images/exterior.PNG" alt="Exterior"></div>
+            </div>
+        </div>
+
+        <div class="gallery-controls">
+            <button class="gallery-prev">❮</button>
+            <button class="gallery-next">❯</button>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="Maximized View">
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+            </div>
+
+            <button class="lightbox-prev" onclick="changeImage(-1)">❮</button>
+            <button class="lightbox-next" onclick="changeImage(1)">❯</button>
+
+            <div class="lightbox-controls">
+                <button id="lb-play" title="Play Slideshow">▶ Play</button>
+                <button id="lb-pause" title="Pause Slideshow" style="display: none;">II Pause</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services reveal">
+        <h2>Our Signature Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <img src="images/devloper.PNG" alt="re">
+                <h3>Real Estate Consulting</h3>
+                <p>We partner with elite developers to present bespoke homes and estates that reflect modern
+                    architectural brilliance.</p>
+            </div>
+            <div class="card">
+                <img src="images/after sales.PNG" alt="re">
+                <h3>After-sales service</h3>
+                <p>Dedicated post-booking support to ensure a smooth experience and timely resolution of concerns.</p>
+            </div>
+            <div class="card">
+                <img src="images/finance.PNG" alt="de">
+                <h3>Financial assistance</h3>
+                <p>Guidance on payment options and financing plans to help you make confident, informed decisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact reveal">
+        <h2>Contact Us</h2>
+        <p>If you would like to know more details or something specific, feel free to contact us. <br>Our site
+            representative will give you a call back.</p>
+
+        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="27158077-f65c-472e-86ba-461ec7b6ff2b">
+            <input type="text" id="fullName" name="name" placeholder="Full Name" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+
+
+            <label class="promo-check">
+                <input type="checkbox" id="promoCheckbox" name="promotions">
+                Yes, I would like to receive updates & promotions from Elite Prestige.
+            </label>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about reveal">
+        <div class="about-content">
+            <h2>About Elite Prestige</h2>
+
+            <p>Elite Prestige is a premium residential development crafted to offer refined living with world-class
+                design,
+                thoughtful planning, and superior quality. With a commitment to excellence, Elite Prestige aims to
+                redefine
+                luxury living through elegant architecture, lush landscapes, and lifestyle-enhancing amenities.
+                The project reflects a vision of creating sustainable, future-ready homes that combine comfort,
+                sophistication,
+                and community-focused design.</p><br>
+            <p>Elite Prestige is a registered project under the provisions of the Real Estate (Regulation and
+                Development) Act, [Year], and developed by [Legal Name of Promoter/Developer]. The project's RERA
+                Registration Number is P518000XXXXX. The official RERA website for verification and project details is
+                [State RERA Website URL]. The project is located at the official site
+                address: [Exact Site Address]. The registered
+                office of the Promoter is [Developer's Registered Office Address]. For sales inquiries, please contact
+                our dedicated team at +91 98XXXXXXXX or visit the site office during working hours.</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Elite Prestige. All Rights Reserved.
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="ep.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
+
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyD3-HvgUMQeMtNwRpVzgstLBan-MHtxXus",
+            authDomain: "contact-form-a3c51.firebaseapp.com",
+            projectId: "contact-form-a3c51",
+            storageBucket: "contact-form-a3c51.firebasestorage.app",
+            messagingSenderId: "424424330790",
+            appId: "1:424424330790:web:528ae5cad4a64075da38e7",
+            measurementId: "G-FL6LQMLDSQ"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const db = getFirestore(app);
+
+        // Form submit handler
+        const form = document.getElementById("contactForm");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();  // stop refresh
+
+            const fullName = document.getElementById("fullName").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+            const promotions = document.getElementById("promoCheckbox").checked;
+
+            try {
+                await addDoc(collection(db, "leads"), {
+                    fullName: fullName,
+                    email: email,
+                    phone: phone,
+                    message: message,
+                    promotions: promotions,
+                    submittedAt: new Date()
+                });
+
+                alert("Your details have been submitted successfully!");
+                form.reset();
+
+            } catch (error) {
+                console.error("Error adding document: ", error);
+                alert("Something went wrong. Try again!");
+            }
+        });  
+    </script>
+</body>
+
+</html>
