@@ -1,3 +1,4 @@
+// hamburger toggle menu
 document.addEventListener("DOMContentLoaded", function () {
   const hamburgerMenu = document.getElementById("hamburger");
   const menu = document.getElementById("nav-menu");
@@ -93,79 +94,7 @@ modalActions.forEach(link => {
   });
 });
 
-// ---------------- GALLERY SWIPER ----------------
-// document.addEventListener("DOMContentLoaded", () => {
-//   if (typeof Swiper === "undefined") {
-//     console.error("Swiper is not loaded. Ensure Swiper JS is included before this script.");
-//     return;
-//   }
-
-//   const gallerySwiper = new Swiper(".myGallerySwiper", {
-//     slidesPerView: 3,
-//     spaceBetween: 20,
-//     loop: true,
-//     autoplay: false,
-
-//     breakpoints: {
-//       0: { slidesPerView: 1 },
-//       640: { slidesPerView: 2 },
-//       1024: { slidesPerView: 3 },
-//     },
-//     navigation: {
-//       nextEl: ".gallery-next",
-//       prevEl: ".gallery-prev",
-//     },
-
-//   });
-
-//   // Start autoplay only when gallery section is visible
-//   const gallerySection = document.querySelector("#gallery");
-//   let galleryStarted = false;
-
-//   const galleryObserver = new IntersectionObserver((entries) => {
-//     entries.forEach(entry => {
-//       if (entry.isIntersecting && !galleryStarted) {
-//         gallerySwiper.autoplay.start();
-//         galleryStarted = true;
-//         galleryObserver.disconnect();
-//       }
-//     });
-//   }, { threshold: 0.2 });
-
-//   galleryObserver.observe(gallerySection);
-
-
-//   const counterEl = document.querySelector(".slide-counter");
-
-//   const updateCounter = () => {
-//     const totalSlides = gallerySwiper.slides.filter(
-//       (s) => !s.classList.contains("swiper-slide-duplicate")
-//     ).length;
-//     const currentIndex = (gallerySwiper.realIndex % totalSlides) + 1;
-//     if (counterEl) counterEl.textContent = `${currentIndex} / ${totalSlides}`;
-//   };
-
-//   gallerySwiper.on("slideChange", updateCounter);
-//   gallerySwiper.on("init", updateCounter);
-//   gallerySwiper.init();
-
-//   // Pause autoplay on hover
-//   const galleryEl = document.querySelector(".myGallerySwiper");
-//   if (galleryEl) {
-//     galleryEl.addEventListener("mouseenter", () => gallerySwiper.autoplay.stop());
-//     galleryEl.addEventListener("mouseleave", () => gallerySwiper.autoplay.start());
-//   }
-// });
-
-// function openNav() {
-//   document.getElementById("mySidepanel").style.width = "260px";
-// }
-
-// function closeNav() {
-//   document.getElementById("mySidepanel").style.width = "0";
-// }
-
-/* ---------------- AMENITIES SLIDER WITH DOT INDICATOR ---------------- */
+/*  AMENITIES SLIDER WITH DOT INDICATOR */
 
 let slideIndex = 0;
 const slides = document.querySelectorAll(".amenities-slider .slide");
@@ -259,7 +188,7 @@ observer.observe(amenitiesSection);
 /* Stop auto slide initially */
 clearInterval(autoSlide);
 
-// ---------------- GALLERY SWIPER ----------------
+// GALLERY SWIPER
 document.addEventListener("DOMContentLoaded", () => {
   // 1. Initialize Swiper
   if (typeof Swiper === "undefined") {
@@ -293,7 +222,7 @@ document.addEventListener("DOMContentLoaded", () => {
     galleryEl.addEventListener("mouseleave", () => gallerySwiper.autoplay.start());
   }
 
-  // ---------------- LIGHTBOX LOGIC ----------------
+  //  LIGHTBOX LOGIC 
 
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
@@ -418,6 +347,7 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
+// Contact form
 const form = document.getElementById("contactForm");
 const promoCheck = document.getElementById("promoCheckbox");
 

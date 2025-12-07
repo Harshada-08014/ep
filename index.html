@@ -332,8 +332,7 @@
         <p>If you would like to know more details or something specific, feel free to contact us. <br>Our site
             representative will give you a call back.</p>
 
-        <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
-            <input type="hidden" name="access_key" value="27158077-f65c-472e-86ba-461ec7b6ff2b">
+        <form id="contactForm">
             <input type="text" id="fullName" name="name" placeholder="Full Name" required>
             <input type="email" id="email" name="email" placeholder="Email Address" required>
             <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
@@ -382,64 +381,6 @@
 
     <script src="ep.js"></script>
 
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-analytics.js";
-        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-firestore.js";
-
-
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyD3-HvgUMQeMtNwRpVzgstLBan-MHtxXus",
-            authDomain: "contact-form-a3c51.firebaseapp.com",
-            projectId: "contact-form-a3c51",
-            storageBucket: "contact-form-a3c51.firebasestorage.app",
-            messagingSenderId: "424424330790",
-            appId: "1:424424330790:web:528ae5cad4a64075da38e7",
-            measurementId: "G-FL6LQMLDSQ"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-        const db = getFirestore(app);
-
-        // Form submit handler
-        const form = document.getElementById("contactForm");
-
-        form.addEventListener("submit", async function (e) {
-            e.preventDefault();  // stop refresh
-
-            const fullName = document.getElementById("fullName").value;
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-            const message = document.getElementById("message").value;
-            const promotions = document.getElementById("promoCheckbox").checked;
-
-            try {
-                await addDoc(collection(db, "leads"), {
-                    fullName: fullName,
-                    email: email,
-                    phone: phone,
-                    message: message,
-                    promotions: promotions,
-                    submittedAt: new Date()
-                });
-
-                alert("Your details have been submitted successfully!");
-                form.reset();
-
-            } catch (error) {
-                console.error("Error adding document: ", error);
-                alert("Something went wrong. Try again!");
-            }
-        });  
-    </script>
 </body>
 
 </html>
